@@ -1,0 +1,64 @@
+LAMMPS: alanine, all-atom, AMBER force fields and parameters
+
+13 atoms
+12 bonds
+
+ 8 atom types
+ 8 bond types
+
+-10.0 10.0 xlo xhi
+-10.0 10.0 ylo yhi
+-10.0 10.0 zlo zhi
+
+Masses
+
+1  # N2
+2  # CT
+3  # C
+4  # O
+5  # H2
+6  # O2
+7  # HC
+8  # HO
+
+Bond Coeffs
+
+1  # N2-CT
+2  # N2-H2
+3  # CT-C
+4  # CT-HC
+5  # CT-CT
+6  # C-O
+7  # C-O2
+8  # O2-HO
+
+Atoms
+
+ 1 1 1 q -1.053  1.300  0.614 # N2
+ 2 1 2 q -0.304  0.032  0.746 # CT(a)
+ 3 1 3 q  0.770 -0.014 -0.311 # C
+ 4 1 4 q  1.952 -0.167 -0.047 # O
+ 5 1 5 q -1.805  1.385  1.386 # H2(a)
+ 6 1 6 q  0.354  0.125 -1.567 # O2
+ 7 1 5 q -1.522  1.368 -0.358 # H2(b)
+ 8 1 7 q  0.176  0.013  1.740 # HC(a)
+ 9 1 2 q -1.237 -1.200  0.610 # CT(b)
+10 1 7 q -2.007 -1.183  1.397 # HC(b)
+11 1 7 q -0.655 -2.129  0.709 # HC(c)
+12 1 7 q -1.737 -1.199 -0.371 # HC(d)
+13 1 8 q  1.100  0.082 -2.154 # HO
+
+Bonds
+
+ 1 1  1  2 # N2    CT(a)
+ 2 2  1  5 # N2    H2(a)
+ 3 2  1  7 # N2    H2(b)
+ 4 3  2  3 # CT(a) C
+ 5 4  2  8 # CT(a) HC(a)
+ 6 5  2  9 # CT(a) CT(b)
+ 7 6  3  4 # C     O
+ 8 7  3  6 # C     O2
+ 9 8  6 13 # O2    HO
+10 4  9 10 # CT(b) HC(b)
+11 4  9 11 # CT(b) HC(c)
+12 4  9 12 # CT(b) HC(d)
