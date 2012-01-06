@@ -2,11 +2,11 @@ LAMMPS: alanine, all-atom, AMBER force fields and parameters
 
 13 atoms
 12 bonds
-15 angles
+19 angles
 
  8 atom types
  8 bond types
-11 angle types
+13 angle types
 
 -10.0 10.0 xlo xhi
 -10.0 10.0 ylo yhi
@@ -23,7 +23,7 @@ Masses
 7  1.007825 # HC
 8  1.007825 # HO
 
-Pair coeffs
+Pair Coeffs
 # Atom type, epsilon, sigma
 1 0.16000 3.5000 # N2
 2 0.06000 3.6000 # CT
@@ -58,6 +58,8 @@ Angle Coeffs
  9  80.0000 126.0000 # O  C  OH
 10  35.0000 113.0000 # C  OH HO
 11  35.5000 109.5000 # HC CT HC
+12  35.0000 109.5000 # HC CT N2
+13  63.0000 111.1000 # CT CT C
 
 Atoms
 # AtomID, MolID, Atom Type, Charge, x, y, z
@@ -93,7 +95,7 @@ Bonds
 Angles
 
  1  1  2  1  5 # CT(a) N2    H2(a)
- 2  1  2  1  7 # CT(A) N2    H2(b)
+ 2  1  2  1  7 # CT(a) N2    H2(b)
  3  2  5  1  7 # H2(a) N2    H2(b)
  4  3  1  2  3 # N2    CT(a) C
  5  4  1  2  9 # N2    CT(a) CT(b)
@@ -107,3 +109,7 @@ Angles
 13  6  2  9 12 # CT(a) CT(b) HC(d)
 14 11 10  9 11 # HC(b) CT(b) HC(c)
 15 11 10  9 12 # HC(b) CT(b) HC(d)
+16  6 10  9  2 # HC(b) CT(b) CT(a)
+17 12  8  2  1 # HC(a) CT(a) N2
+18 13  9  2  3 # CT(b) CT(a) C
+19 11 11  9 12 # HC(c) CT(b) HC(d)
